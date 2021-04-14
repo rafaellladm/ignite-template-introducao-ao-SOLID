@@ -15,7 +15,7 @@ class ListAllUsersUseCase {
       throw new Error("User doesn't exist!");
     }
 
-    if (!userAlreadyExist.admin === true) {
+    if (!userAlreadyExist.admin) {
       throw new Error("User is not admin");
     }
 
