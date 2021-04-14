@@ -9,7 +9,7 @@ class User {
 
   email: string;
 
-  create_at: Date;
+  created_at: Date;
 
   updated_at: Date;
 
@@ -19,7 +19,7 @@ class User {
     }
 
     this.admin = false;
-    this.updated_at = undefined;
+    this.updated_at = new Date();
   }
 }
 
