@@ -13,7 +13,7 @@ class TurnUserAdminController {
 
       return response.status(201).json(user);
     } catch (e) {
-      return response.status(404).json({ error: e });
+      return response.status(404).json({ error: "User doesn't exist!" });
     }
   }
 }
